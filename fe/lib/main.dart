@@ -4,6 +4,11 @@ import 'cau2/apps/cau2_app.dart';
 import 'cau3/apps/cau3_app.dart';
 import 'cau4/apps/cau4_app.dart';
 import 'cau5/apps/cau5_app.dart';
+import 'cau6/apps/cau6_app.dart';
+import 'cau7/apps/cau7_app.dart';
+import 'cau8/apps/cau8_app.dart';
+import 'cau9/apps/cau9_app.dart';
+import 'cau10/apps/cau10_app.dart';
 
 void main() {
   runApp(const MainMenuApp());
@@ -68,6 +73,36 @@ class MainMenuScreen extends StatelessWidget {
                 context,
                 'Bài 5: Pointer Events cơ bản',
                 () => _navigateToCau(context, const Cau5App()),
+              ),
+              const SizedBox(height: 12),
+              _buildMenuButton(
+                context,
+                'Bài 6: Kéo hình tròn',
+                () => _navigateToCau(context, const Cau6App()),
+              ),
+              const SizedBox(height: 12),
+              _buildMenuButton(
+                context,
+                'Bài 7: Kéo thanh Slider',
+                () => _navigateToCau(context, const Cau7App()),
+              ),
+              const SizedBox(height: 12),
+              _buildMenuButton(
+                context,
+                'Bài 8: Gesture trong Grid',
+                () => _navigateToCau(context, const Cau8App()),
+              ),
+              const SizedBox(height: 12),
+              _buildMenuButton(
+                context,
+                'Bài 9: Swipe đổi hình',
+                () => _navigateToCau(context, const Cau9App()),
+              ),
+              const SizedBox(height: 12),
+              _buildMenuButton(
+                context,
+                'Bài 10: Kéo để xóa item',
+                () => _navigateToCau(context, const Cau10App()),
               ),
             ],
           ),
